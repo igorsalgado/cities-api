@@ -1,8 +1,11 @@
 package com.github.igorsalgado.citiesapi.states.entities;
 
 import com.github.igorsalgado.citiesapi.countries.entities.Country;
+import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 import lombok.*;
 import org.hibernate.annotations.Type;
+import org.hibernate.annotations.TypeDef;
+import org.hibernate.annotations.TypeDefs;
 
 import javax.persistence.*;
 import java.util.List;
@@ -12,9 +15,9 @@ import java.util.List;
 @NoArgsConstructor
 @Entity(name = "State")
 @Table(name = "estado")
-//@TypeDefs({
-//        @TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
-//})
+@TypeDefs({
+        @TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
+})
 public class State {
 
     @Id
