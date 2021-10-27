@@ -1,4 +1,4 @@
-package com.github.igorsalgado.citiesapi.repository;
+package com.github.igorsalgado.citiesapi.countries.repositories;
 
 import com.github.igorsalgado.citiesapi.countries.entities.Country;
 import org.springframework.data.jpa.repository.JpaRepository;
