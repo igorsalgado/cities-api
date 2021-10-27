@@ -1,6 +1,7 @@
 package com.github.igorsalgado.citiesapi.countries.entities;
 
 
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -25,16 +26,15 @@ public class Country {
 
     private Integer bacen;
 
+    public Country() {
+    }
+
     public Country(Long id, String name, String portugueseName, String code, Integer bacen) {
         this.id = id;
         this.name = name;
         this.portugueseName = portugueseName;
         this.code = code;
         this.bacen = bacen;
-    }
-
-    public Country() {
-
     }
 
     public Long getId() {
